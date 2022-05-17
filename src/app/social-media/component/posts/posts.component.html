@@ -1,2 +1,2 @@
 <h2>Post:</h2>
-<app-posts-item *ngFor="let post of postListes$|async" [post]="post" ></app-posts-item>
+<app-posts-item *ngFor="let post of postListes$|async" [post]="post" (postCommented)="onPostCommented($event)" ></app-posts-item>

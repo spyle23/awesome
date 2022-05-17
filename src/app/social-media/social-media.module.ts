@@ -6,6 +6,7 @@ import { PostsService } from './services/posts.service';
 import { PostsResolver } from './resolvers/posts.resolver';
 import { PostsComponent } from './component/posts/posts.component';
 import { PostsItemComponent } from './component/posts-item/posts-item.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,6 +18,7 @@ import { PostsItemComponent } from './component/posts-item/posts-item.component'
   imports: [
     CommonModule,
     SocialMediaRoutingModule,
+    SharedModule
   
   ],
   providers:[
