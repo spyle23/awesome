@@ -6,6 +6,8 @@ import { MatModule } from './mat.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { shortenPipe } from './pipe/shorten.pipe';
 import { UserPipe } from './pipe/user.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
+
 
 
 
@@ -13,7 +15,8 @@ import { UserPipe } from './pipe/user.pipe';
   declarations: [
     CommentComponent,
     shortenPipe,
-    UserPipe
+    UserPipe,
+    HighlightDirective,
   ],
   imports: [
     CommonModule,
@@ -25,7 +28,8 @@ import { UserPipe } from './pipe/user.pipe';
     MatModule,
     ReactiveFormsModule,
     shortenPipe,
-    UserPipe
+    UserPipe,
+    HighlightDirective
   ]
 })
 export class SharedModule { }
